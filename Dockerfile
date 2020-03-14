@@ -58,4 +58,4 @@ RUN pip install tensorflow_hub==0.7.0
 # RUN pip install --extra-index-url https://developer.download.nvidia.com/compute/redist/cuda/10.0 nvidia-dali
 
 WORKDIR /app/autodl
-ADD VERSION .
+#ADD VERSION .
