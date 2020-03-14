@@ -9,6 +9,13 @@ Provide “Universal Learning Machines”(deeplearning), which can learn and mak
   
 ### How?  
 Use algorithms that can be trained and tested automatically, without any human intervention. Algorithms that can solve multilabel classification for images, videos, text, speech, and tabular data, each one with its own time budget.  
+
+### Metrics
+The model can be trained in batches of pre-defined duration to incrementally improve their performance, until the time limit is attained. In this way we can plot learning curves: "performance" as a function of time. Each time the "train" method terminates, the "test" method is called and the results are saved, so the scoring program can use them, together with their timestamp.  
+
+Each label/class is considered a separate binary classification problem, and we compute the normalized AUC (or Gini coefficient) `2 * AUC - 1`
+as score for each prediction, here AUC is the usual area under ROC curve (ROC AUC).
+For each dataset, we compute the Area under Learning Curve (ALC).
   
 ## Download 
 
