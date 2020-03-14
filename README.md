@@ -59,9 +59,8 @@ cd path/to/AutoDL/
 
 The Docker image has `python=3.5.2` and has
 installed packages such as
-`tensorflow-gpu=1.13.1` (or `tensorflow=1.13.1` for `cpu`), `torch=1.3.1`,
-`keras=2.2.4`, CUDA 10, cuDNN 7.5, etc. If you want to
-run local test with Nvidia GPU support, please make sure you have
+`tensorflow-gpu=1.13.1`, `torch=1.3.1`,
+`keras=2.2.4`, CUDA 10, cuDNN 7.5, etc. Run with Nvidia GPU support, please make sure you have
 [installed nvidia-docker](https://github.com/NVIDIA/nvidia-docker) and run
 ```
 nvidia-docker run -it -v "$(pwd):/app/autodl" -p 8888:8888 yaish/autodl:gpu-latest
