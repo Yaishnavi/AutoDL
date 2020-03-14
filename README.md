@@ -158,5 +158,5 @@ If you still want more details, you can refer to the source code at
 - Ingestion Program: `Ingestion/ingestion.py`
 - Scoring Program: `Scoring/score.py`
 
-## References 
+## Links
 [AutoDL Challenges](https://autodl.chalearn.org/)
