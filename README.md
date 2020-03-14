@@ -61,16 +61,6 @@ Make sure you use enough RAM (**at least 4GB**). If the port 8888 is occupied,
 you can use other ports, e.g. 8899, and use instead the option `-p 8899:8888`.
 
 
-
-
-The full usage is
-```
-python run_local_test.py -dataset_dir='AutoDL_sample_data/miniciao' -code_dir='AutoDL_simple_baseline_models/linear'
-```
-or
-```
-python run_local_test.py -dataset_dir='AutoDL_public_data/Munster' -code_dir='AutoDL_sample_code_submission'
-```
 You can change the argument `dataset_dir` to other datasets (e.g. the five
 public datasets we provide). On the other hand,
 you can also modify the directory containing your other sample code
