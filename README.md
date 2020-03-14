@@ -1,6 +1,15 @@
 AutoDL
 ======================================
-
+### Goal
+Provide “Universal Learning Machines”(deeplearning), which can learn and make predictions without human intervention (blind testing).  
+  
+### Why AutoDL?  
+- Automate repetitive tasks, Reduce errors, Non-ML user convenience. 
+- designing architectures is hard, intuition for designing, human effort, Automation.  
+  
+### How?  
+Use algorithms that can be trained and tested automatically, without any human intervention. Algorithms that can solve multilabel classification for images, videos, text, speech, and tabular data, each one with its own time budget.  
+  
 ## Download 
 
 You can download by clicking on the green button
