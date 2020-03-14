@@ -8,7 +8,24 @@ Provide “Universal Learning Machines”(deeplearning), which can learn and mak
 - designing architectures is hard, intuition for designing, human effort, Automation.  
   
 ### How?  
-Use algorithms that can be trained and tested automatically, without any human intervention. Algorithms that can solve multilabel classification for images, videos, text, speech, and tabular data, each one with its own time budget.  
+Use algorithms that can be trained and tested automatically, without any human intervention. Algorithms that can solve multilabel classification for images, videos, text, speech, and tabular data, each one with its own time budget. 
+
+### Solutions
+- Automatically preprocess  
+- Automatically extract features 
+- Automatically design effective neural network structures (Neural Architecture Search)
+- Automatically select effective pre-trained models
+- Automatically Augment data
+- HyperParameter Search
+- Meta learning
+- Transfer Learning
+
+#### Methods used
+1. Fast AutoAugmentation - [Paper](http://papers.nips.cc/paper/8892-fast-autoaugment), [GitHub](https://github.com/kakaobrain/autoclint)
+2. DARTS - [GitHub](https://github.com/wbaek/darts)
+3. DenseNAS - [Paper](https://arxiv.org/abs/1906.09607), [Github](https://github.com/wbaek/DenseNAS)
+4. Automated Ensemble Frameworks - [Paper](http://papers.nips.cc/paper/5872-efficient-and-robust-automated-machine)
+5. Audio Data Augmentation - [Paper](https://www.isca-speech.org/archive/Interspeech_2019/abstracts/2680.html)
 
 ### Metrics
 The model can be trained in batches of pre-defined duration to incrementally improve their performance, until the time limit is attained. In this way we can plot learning curves: "performance" as a function of time. Each time the "train" method terminates, the "test" method is called and the results are saved, so the scoring program can use them, together with their timestamp.  
@@ -60,7 +77,8 @@ cd path/to/AutoDL/
 The Docker image has `python=3.5.2` and has
 installed packages such as
 `tensorflow-gpu=1.13.1`, `torch=1.3.1`,
-`keras=2.2.4`, CUDA 10, cuDNN 7.5, etc. Run with Nvidia GPU support, please make sure you have
+`keras=2.2.4`, CUDA 10, cuDNN 7.5, etc. If you want to	`keras=2.2.4`, CUDA 10, cuDNN 7.5, etc. 
+Run with Nvidia GPU support, please make sure you have. 
 [installed nvidia-docker](https://github.com/NVIDIA/nvidia-docker) and run
 ```
 nvidia-docker run -it -v "$(pwd):/app/autodl" -p 8888:8888 yaish/autodl:gpu-latest
@@ -139,3 +157,6 @@ can find a flow chart (`evaluation-flow-chart.png`) in the repo:
 If you still want more details, you can refer to the source code at
 - Ingestion Program: `Ingestion/ingestion.py`
 - Scoring Program: `Scoring/score.py`
+
+## References 
+[AutoDL Challenges](https://autodl.chalearn.org/)
