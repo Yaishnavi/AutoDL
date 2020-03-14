@@ -114,8 +114,6 @@ are not familiar with this format.
 
 ## Evaluation
 
-You may have following questions:
-- How is a submission handled and evaluated on CodaLab? How is it implemented?
 - What are ingestion program and scoring program? What do they do?
 
 To answer these questions, you
