@@ -152,7 +152,7 @@ are not familiar with this format.
 To answer these questions, you
 can find a flow chart (`evaluation-flow-chart.png`) in the repo:
 
-![Evaluation Flow Chart](evaluation-flow-chart.png "Evaluation process of the challenge")
+![Evaluation Flow Chart](evaluation-flow-chart.png)
 
 If you still want more details, you can refer to the source code at
 - Ingestion Program: `Ingestion/ingestion.py`
